@@ -1,5 +1,0 @@
-  =>  Template Author  : HTML Codex
-
- #EF233C
- #FB6A27
- rgb(199, 130, 3)

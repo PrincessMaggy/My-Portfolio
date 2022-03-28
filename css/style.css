@@ -469,86 +469,6 @@ a:focus {
 
 
 /*******************************/
-/********** About CSS **********/
-/*******************************/
-.about {
-    position: relative;
-    width: 100%;
-    margin: -45px 0 45px 0;
-}
-
-.about .col-lg-6 {
-    padding: 0;
-}
-
-.about .section-header {
-    margin-bottom: 30px;
-}
-
-.about .about-img {
-    position: relative;
-    height: 100%;
-}
-
-.about .about-img img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.about .about-content {
-    padding: 0 60px;
-}
-
-.about .about-text p {
-    font-size: 16px;
-}
-
-.about .skills {
-    margin-bottom: 30px;
-}
-
-.about .skill-name {
-    margin-top: 15px;
-}
-
-.about .skill-name p {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about .skill-name p:last-child {
-    float: right;
-}
-
-.about .progress {
-    height: 10px;
-    border-radius: 10px;
-    background: #dddddd;
-}
-
-.about .progress .progress-bar {
-    width: 0px;
-    background: #FB6A27;
-    border-radius: 10px;
-    transition: 2s;
-}
-
-.about .about-text a.btn {
-    margin-top: 15px;
-}
-
-@media (max-width: 991.98px) {
-    .about .about-content {
-        padding: 45px 15px 0 15px;
-    }
-}
-
-
-/*******************************/
 /******* Experience CSS ********/
 /*******************************/
 .experience {
@@ -743,7 +663,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #FB6A27;
+    box-shadow: inset 1800px 0 0 0 #FB6A27;
 }
 
 .service .service-icon {
@@ -799,7 +719,8 @@ a:focus {
     }
     
     .service .service-text p {
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: 500;
     }
 }
 
@@ -814,7 +735,7 @@ a:focus {
 
 .portfolio #portfolio-filter {
     padding: 0;
-    margin: -15px 0 25px 0;
+    margin: -15px 0 30px 0;
     list-style: none;
     font-size: 0;
     text-align: center;
@@ -911,63 +832,6 @@ a:focus {
 }
 
 
-/*******************************/
-/********* Banner CSS **********/
-/*******************************/
-.banner {
-    position: relative;
-    width: 100%;
-    margin: 45px 0;
-    padding: 90px 0;
-    background: #FB6A27;
-}
-
-.banner .container {
-    max-width: 750px;
-    text-align: center;
-}
-
-.banner .section-header {
-    margin-bottom: 20px;
-}
-
-.banner .section-header p {
-    color: #414141;
-    background: transparent;
-}
-
-.banner .section-header p::after {
-    display: none;
-}
-
-.banner .section-header h2 {
-    color: #ffffff;
-}
-
-.banner .section-header h2 span {
-    color: #414141;
-    font-size: 50px;
-}
-
-.banner .banner-text p {
-    font-size: 18px;
-    color: #ffffff;
-}
-
-.banner .banner-text .btn {
-    margin-top: 15px;
-    color: #FB6A27;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
-.banner .banner-text .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
-
 
 /*******************************/
 /********* Contact CSS *********/
@@ -975,7 +839,6 @@ a:focus {
 .contact {
     position: relative;
     width: 100%;
-    margin: 45px 0;
     background: #FB6A27;
 }
 
@@ -1051,8 +914,11 @@ a:focus {
         padding: 90px 0;
     }
 }
-
-
+@media (min-width:768px){
+    .contact{
+   padding: 6.4rem 0 0 0;
+}
+}
 /*******************************/
 /*********** Blog CSS **********/
 /*******************************/
@@ -1134,7 +1000,6 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
     background: linear-gradient( #FB6A27, rgba(248, 61, 83, 0.95)), url(../img/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
