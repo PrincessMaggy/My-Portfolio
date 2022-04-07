@@ -777,7 +777,7 @@ a:focus {
 
 .portfolio .portfolio-img {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .portfolio .portfolio-img img {
