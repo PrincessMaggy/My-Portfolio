@@ -1,5 +1,5 @@
 const nextConfig = {
-    // basePath: '/My-Portfolio',
+    basePath: '/My-Portfolio',
     reactStrictMode: true,
 };
 
