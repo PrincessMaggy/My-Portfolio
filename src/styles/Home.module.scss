@@ -1,0 +1,49 @@
+.body {
+    height: 100vh;
+    padding: 0 0 2em 5em;
+    background: url(/assets/Background.png), #323540 50% / cover no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    font-family: Iceland;
+    gap: 1em;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    gap: 1em;
+    h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    .firstname {
+        color: rgba(255, 214, 0, 0.39);
+    }
+    p {
+        word-spacing: 2em;
+        letter-spacing: 1em;
+        font-size: 1.2rem;
+    }
+    .buttons {
+        display: flex;
+        button {
+            display: block;
+            margin-right: 1em;
+            color: white;
+            padding: 0.5em 1em 0.5em 1em;
+            border: 0.1px solid rgba(255, 214, 0, 0.39);
+            background-color: inherit;
+            border-radius: 10px;
+            letter-spacing: 0.3em;
+        }
+    }
+}
+.footer {
+    display: flex;
+    gap: 0.7em;
+}
