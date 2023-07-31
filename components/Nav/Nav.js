@@ -6,6 +6,7 @@ import styles from './nav.module.css';
 import {AiOutlineMenu} from 'react-icons/ai';
 import {AiOutlineClose} from 'react-icons/ai';
 import {motion, AnimatePresence} from 'framer-motion';
+import cls from 'classnames';
 
 function Nav() {
     const [menu, setMenu] = useState(false);
@@ -82,7 +83,14 @@ function Nav() {
                                     },
                                 }}
                             >
-                                <Link href='/' className={styles.linkTag}>
+                                <Link
+                                    href='/'
+                                    className={
+                                        router.pathname === '/'
+                                            ? styles.linkTag
+                                            : ''
+                                    }
+                                >
                                     Home
                                 </Link>
                             </motion.li>
@@ -99,7 +107,16 @@ function Nav() {
                                     },
                                 }}
                             >
-                                <Link href='/about'>About</Link>
+                                <Link
+                                    href='/about'
+                                    className={
+                                        router.pathname === '/about'
+                                            ? styles.linkTag
+                                            : ''
+                                    }
+                                >
+                                    About
+                                </Link>
                             </motion.li>
                             <motion.li
                                 initial={{y: 80, opacity: 0}}
@@ -114,7 +131,16 @@ function Nav() {
                                     },
                                 }}
                             >
-                                <Link href='/'>Resume</Link>
+                                <Link
+                                    href='/'
+                                    className={
+                                        router.pathname === '/resume'
+                                            ? styles.linkTag
+                                            : ''
+                                    }
+                                >
+                                    Resume
+                                </Link>
                             </motion.li>
                             <motion.li
                                 initial={{y: 80, opacity: 0}}
@@ -129,7 +155,16 @@ function Nav() {
                                     },
                                 }}
                             >
-                                <Link href='/'>Portfolio</Link>
+                                <Link
+                                    href='/'
+                                    className={
+                                        router.pathname === '/portfolio'
+                                            ? styles.linkTag
+                                            : ''
+                                    }
+                                >
+                                    Portfolio
+                                </Link>
                             </motion.li>
                             <motion.li
                                 initial={{y: 80, opacity: 0}}
@@ -144,11 +179,24 @@ function Nav() {
                                     },
                                 }}
                             >
-                                <Link href='/'>Services</Link>
+                                <Link
+                                    href='/'
+                                    className={
+                                        router.pathname === '/services'
+                                            ? styles.linkTag
+                                            : ''
+                                    }
+                                >
+                                    Services
+                                </Link>
                             </motion.li>
                         </div>
                         <motion.div
-                            className={styles.contact}
+                            className={
+                                router.pathname === '/contact'
+                                    ? cls(styles.linkTag, styles.contact)
+                                    : styles.contact
+                            }
                             initial={{y: 80, opacity: 0}}
                             animate={{y: 0, opacity: 1}}
                             transition={{delay: 0.3}}
