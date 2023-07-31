@@ -132,7 +132,7 @@ function Nav() {
                                 }}
                             >
                                 <Link
-                                    href='/'
+                                    href='/resume'
                                     className={
                                         router.pathname === '/resume'
                                             ? styles.linkTag
@@ -156,7 +156,7 @@ function Nav() {
                                 }}
                             >
                                 <Link
-                                    href='/'
+                                    href='/portfolio'
                                     className={
                                         router.pathname === '/portfolio'
                                             ? styles.linkTag
@@ -180,7 +180,7 @@ function Nav() {
                                 }}
                             >
                                 <Link
-                                    href='/'
+                                    href='/services'
                                     className={
                                         router.pathname === '/services'
                                             ? styles.linkTag
@@ -209,7 +209,7 @@ function Nav() {
                                 },
                             }}
                         >
-                            Contact
+                            <Link href='/contact'>Contact</Link>
                         </motion.div>
                     </div>
                 )}
