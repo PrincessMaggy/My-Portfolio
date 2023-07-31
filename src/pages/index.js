@@ -36,6 +36,10 @@ export default function Home() {
         setCurrentWord(words[currentWordIndex]);
     }, [currentWordIndex, words.length, words]);
 
+    const rootStyles = {
+        '--basePath': `url(${basePath}/assets/Background.png), #323540 50% / cover no-repeat`,
+    };
+
     return (
         <>
             <Head>
@@ -45,12 +49,12 @@ export default function Home() {
                     name='viewport'
                     content='width=device-width, initial-scale=1'
                 />
-                <link rel='icon' href='/assets/Logo.png' />
+                <link rel='icon' href={`${basePath}/assets/Logo.png`} />
             </Head>
             <motion.main className={styles.main} animate='animate'>
                 <AnimatePresence>
                     <Nav key='nav' />
-                    <div className={styles.body} key='body'>
+                    <div className={styles.body} key='body' style={rootStyles}>
                         <div className={styles.banner} key='banner'>
                             <h2 className={styles.firstname}>Edozie </h2>
                             <h2>Magdalene</h2>
