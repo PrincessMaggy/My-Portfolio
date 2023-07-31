@@ -99,7 +99,7 @@ function Nav() {
                                     },
                                 }}
                             >
-                                <Link href='/'>About</Link>
+                                <Link href='/about'>About</Link>
                             </motion.li>
                             <motion.li
                                 initial={{y: 80, opacity: 0}}

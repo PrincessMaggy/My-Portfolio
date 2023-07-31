@@ -1,17 +1,39 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './footer.module.css';
-import {motion} from 'framer-motion';
+import {motion, AnimatePresence} from 'framer-motion';
+import {useRouter} from 'next/router';
 
 function Footer() {
+    const router = useRouter();
+    const basePath = router.basePath || '';
+
     return (
-        <motion.div className='footer' initial='initial' animate='animate'>
-            <Image
-                src={`${basePath}/assets/Address.svg`}
-                width={25}
-                height={25}
-                alt='img'
-            />
+        <motion.div
+            initial='initial'
+            animate='animate'
+            className={styles.footer}
+        >
+            <motion.a
+                href='/'
+                target='_blank'
+                rel='noopener noreferrer'
+                whileHover={{
+                    scale: 1.2,
+                    rotate: 180,
+                    borderRadius: '100%',
+                    cursor: 'pointer',
+                    transition: {duration: 0.3},
+                }}
+            >
+                {' '}
+                <Image
+                    src={`${basePath}/assets/Address.svg`}
+                    width={25}
+                    height={25}
+                    alt='img'
+                />
+            </motion.a>
             <motion.a
                 href='https://github.com/PrincessMaggy'
                 target='_blank'
