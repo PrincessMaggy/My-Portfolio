@@ -1,4 +1,74 @@
 .contactMain {
     display: flex;
-    height: 80vh;
+    height: fit-content;
+    color: white;
+    padding: 1em 0 2em 4em;
+    @media (max-width: 768px) {
+        padding-left: 0.5em;
+    }
+    gap: 1em;
+    header {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    p {
+        font-size: 0.9rem;
+        margin-top: 1em;
+    }
+}
+.map {
+    height: inherit;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.contactMain form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    @media (max-width: 768px) {
+        align-items: center;
+    }
+    label {
+        display: block;
+        color: #ffd600;
+    }
+    input {
+        background-color: #d9d9d9;
+        width: 18em;
+        height: 2.5em;
+    }
+    textarea {
+        background-color: #d9d9d9;
+    }
+}
+.captcha {
+    background-color: #d9d9d9;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.4em 0 0.4em 0.5em;
+    span {
+        color: black;
+        font-size: 0.5rem;
+    }
+    input {
+        width: 2em !important;
+        height: 2em;
+    }
+}
+.formFooter {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    button {
+        padding: 0.8em 1em 0.8em 1em;
+        background-color: rgba(255, 214, 0, 0.39);
+        border: 1px solid white;
+        border-radius: 10px;
+        color: white;
+    }
 }
