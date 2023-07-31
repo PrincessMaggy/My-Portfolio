@@ -8,3 +8,7 @@
     color: white;
     justify-content: space-between;
 }
+.footer img:hover {
+    border-radius: 50%;
+    background-color: #ffd600;
+}
