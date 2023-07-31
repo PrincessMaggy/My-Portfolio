@@ -30,7 +30,6 @@ function Footer() {
                         transition: {duration: 0.3},
                     }}
                 >
-                    {' '}
                     <Image
                         src={`${basePath}/assets/Address.svg`}
                         width={25}
