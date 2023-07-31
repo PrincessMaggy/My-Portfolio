@@ -36,9 +36,7 @@ export default function Home() {
         setCurrentWord(words[currentWordIndex]);
     }, [currentWordIndex, words.length, words]);
 
-    const rootStyles = {
-        '--basePath': `url(${basePath}/assets/Background.png), #323540 50% / cover no-repeat`,
-    };
+    const rootStyles = `url(${basePath}/assets/Background.png), #323540 50% / cover no-repeat`;
 
     return (
         <>
@@ -54,7 +52,11 @@ export default function Home() {
             <motion.main className={styles.main} animate='animate'>
                 <AnimatePresence>
                     <Nav key='nav' />
-                    <div className={styles.body} key='body' style={rootStyles}>
+                    <div
+                        className={styles.body}
+                        key='body'
+                        style={{background: rootStyles}}
+                    >
                         <div className={styles.banner} key='banner'>
                             <h2 className={styles.firstname}>Edozie </h2>
                             <h2>Magdalene</h2>
