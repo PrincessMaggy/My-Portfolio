@@ -1,20 +1,28 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './footer.module.css';
+import {motion} from 'framer-motion';
 
 function Footer() {
     return (
-        <div className='footer'>
+        <motion.div className='footer' initial='initial' animate='animate'>
             <Image
                 src={`${basePath}/assets/Address.svg`}
                 width={25}
                 height={25}
                 alt='img'
             />
-            <a
+            <motion.a
                 href='https://github.com/PrincessMaggy'
                 target='_blank'
                 rel='noopener noreferrer'
+                whileHover={{
+                    scale: 1.2,
+                    rotate: 180,
+                    borderRadius: '100%',
+                    cursor: 'pointer',
+                    transition: {duration: 0.3},
+                }}
             >
                 <Image
                     src={`${basePath}/assets/Github.svg`}
@@ -23,11 +31,17 @@ function Footer() {
                     alt='img'
                     href='https://github.com/PrincessMaggy'
                 />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
                 href='https://twitter.com/home'
                 target='_blank'
                 rel='noopener noreferrer'
+                whileHover={{
+                    scale: 1.2,
+                    rotate: 180,
+                    borderRadius: '100%',
+                    cursor: 'pointer',
+                }}
             >
                 <Image
                     src={`${basePath}/assets/Twitter.svg`}
@@ -36,11 +50,17 @@ function Footer() {
                     alt='img'
                     href='https://twitter.com/home'
                 />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
                 href='https://www.linkedin.com/in/edoziemagdalene/'
                 target='_blank'
                 rel='noopener noreferrer'
+                whileHover={{
+                    scale: 1.2,
+                    rotate: 180,
+                    borderRadius: '100%',
+                    cursor: 'pointer',
+                }}
             >
                 <Image
                     src={`${basePath}/assets/Linkedin.svg`}
@@ -48,11 +68,17 @@ function Footer() {
                     height={25}
                     alt='img'
                 />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
                 href='https://t.me/princessmaggy'
                 target='_blank'
                 rel='noopener noreferrer'
+                whileHover={{
+                    scale: 1.2,
+                    rotate: 180,
+                    borderRadius: '100%',
+                    cursor: 'pointer',
+                }}
             >
                 <Image
                     src={`${basePath}/assets/Telegram.svg`}
@@ -60,11 +86,17 @@ function Footer() {
                     height={25}
                     alt='img'
                 />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
                 href='mailto:edoziemagdalene@gmail.com'
                 target='_blank'
                 rel='noopener noreferrer'
+                whileHover={{
+                    scale: 1.2,
+                    rotate: 180,
+                    borderRadius: '100%',
+                    cursor: 'pointer',
+                }}
             >
                 <Image
                     src={`${basePath}/assets/Email.svg`}
@@ -72,8 +104,8 @@ function Footer() {
                     height={25}
                     alt='img'
                 />
-            </a>{' '}
-        </div>
+            </motion.a>
+        </motion.div>
     );
 }
 
