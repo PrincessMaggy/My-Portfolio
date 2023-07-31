@@ -3,8 +3,6 @@ import React from 'react';
 import Nav from '../../components/Nav/Nav';
 import Footer from '../../components/Footer/Footer';
 import styles from '../styles/Portfolio.module.scss';
-import Image from 'next/image';
-import Link from 'next/link';
 import {motion} from 'framer-motion';
 import Head from 'next/head';
 import Card from '../../components/Card/Card';
@@ -24,18 +22,6 @@ function Portfolio() {
         },
     };
 
-    const item = {
-        hidden: {opacity: 0, y: 20},
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                ease: 'easeInOut',
-                duration: 0.2,
-            },
-        },
-    };
-
     const title = {
         hidden: {
             y: 60,
@@ -49,19 +35,6 @@ function Portfolio() {
                 duration: 0.6,
                 ease: easing,
             },
-        },
-    };
-
-    const hoverEffect = {
-        whileHover: {
-            scale: 1.5,
-            rotate: 630,
-            borderRadius: '100%',
-        },
-        whileTap: {
-            scale: 0.8,
-            rotate: 630,
-            borderRadius: '100%',
         },
     };
 
