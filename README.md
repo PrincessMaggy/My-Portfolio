@@ -13,7 +13,7 @@
 This is my portfolio website
 ### Screenshot
 
-![screenshot](./SCREENSHOT.png)
+![screenshot](./Screenshot.png)
 
 ### Links
 
