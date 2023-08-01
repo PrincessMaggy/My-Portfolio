@@ -47,6 +47,11 @@ function Nav() {
         };
     }, []);
 
+    // Close the menu when the route changes
+    useEffect(() => {
+        setMenu(false);
+    }, [router.pathname]);
+
     return (
         <motion.div className={styles.navContainer}>
             <AnimatePresence>
