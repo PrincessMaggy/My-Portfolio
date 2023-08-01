@@ -6,6 +6,7 @@ import Head from 'next/head';
 import styles from '../styles/About.module.scss';
 import {useRouter} from 'next/router';
 import {motion} from 'framer-motion';
+import Link from 'next/link';
 
 function About() {
     const router = useRouter();
@@ -54,7 +55,7 @@ function About() {
                             delay: 0.6,
                         }}
                     >
-                        <h2>ABOUT</h2>
+                        <h1>ABOUT</h1>
                         <div className={styles.line}></div>
                         <h5>Software Developer/Coach</h5>
                         <p>
@@ -70,36 +71,40 @@ function About() {
                         </p>
                         <div className={styles.buttons}>
                             <div>
-                                <motion.button
-                                    whileHover={{
-                                        scale: 1.1,
-                                        transition: {duration: 0.3},
-                                    }}
-                                    whileTap={{scale: 0.9}}
-                                    transition={{
-                                        type: 'spring',
-                                        stiffness: 400,
-                                        damping: 10,
-                                    }}
-                                >
-                                    Resume
-                                </motion.button>
+                                <Link href='/resume'>
+                                    <motion.button
+                                        whileHover={{
+                                            scale: 1.1,
+                                            transition: {duration: 0.3},
+                                        }}
+                                        whileTap={{scale: 0.9}}
+                                        transition={{
+                                            type: 'spring',
+                                            stiffness: 400,
+                                            damping: 10,
+                                        }}
+                                    >
+                                        Resume
+                                    </motion.button>
+                                </Link>
                             </div>
                             <div>
-                                <motion.button
-                                    whileHover={{
-                                        scale: 1.1,
-                                        transition: {duration: 0.3},
-                                    }}
-                                    whileTap={{scale: 0.9}}
-                                    transition={{
-                                        type: 'spring',
-                                        stiffness: 400,
-                                        damping: 10,
-                                    }}
-                                >
-                                    Portfolio
-                                </motion.button>
+                                <Link href='/portfolio'>
+                                    <motion.button
+                                        whileHover={{
+                                            scale: 1.1,
+                                            transition: {duration: 0.3},
+                                        }}
+                                        whileTap={{scale: 0.9}}
+                                        transition={{
+                                            type: 'spring',
+                                            stiffness: 400,
+                                            damping: 10,
+                                        }}
+                                    >
+                                        Portfolio
+                                    </motion.button>
+                                </Link>
                             </div>
                         </div>
                     </motion.div>

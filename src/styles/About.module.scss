@@ -33,15 +33,18 @@
         width: 90%;
         text-align: center;
     }
-    h2,
+    h1,
     h5 {
         text-align: center;
+        letter-spacing: 0.1em;
     }
     h5 {
         font-size: 1.1rem;
+        font-weight: 500;
     }
     p {
         line-height: 1.5em;
+        letter-spacing: 0.1em;
     }
     .buttons {
         display: flex;

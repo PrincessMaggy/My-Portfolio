@@ -4,6 +4,7 @@ import {Inter} from 'next/font/google';
 import styles from '@/styles/Home.module.scss';
 import {useRouter} from 'next/router';
 import {motion, AnimatePresence} from 'framer-motion';
+import Link from 'next/link';
 
 // components
 import Nav from '../../components/Nav/Nav';
@@ -82,36 +83,40 @@ export default function Home() {
                             </p>
                             <div className={styles.buttons}>
                                 <div>
-                                    <motion.button
-                                        whileHover={{
-                                            scale: 1.1,
-                                            transition: {duration: 0.3},
-                                        }}
-                                        whileTap={{scale: 0.9}}
-                                        transition={{
-                                            type: 'spring',
-                                            stiffness: 400,
-                                            damping: 10,
-                                        }}
-                                    >
-                                        Resume
-                                    </motion.button>
+                                    <Link href='/resume'>
+                                        <motion.button
+                                            whileHover={{
+                                                scale: 1.1,
+                                                transition: {duration: 0.3},
+                                            }}
+                                            whileTap={{scale: 0.9}}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 400,
+                                                damping: 10,
+                                            }}
+                                        >
+                                            Resume
+                                        </motion.button>
+                                    </Link>
                                 </div>
                                 <div>
-                                    <motion.button
-                                        whileHover={{
-                                            scale: 1.1,
-                                            transition: {duration: 0.3},
-                                        }}
-                                        whileTap={{scale: 0.9}}
-                                        transition={{
-                                            type: 'spring',
-                                            stiffness: 400,
-                                            damping: 10,
-                                        }}
-                                    >
-                                        Portfolio
-                                    </motion.button>
+                                    <Link href='/portfolio'>
+                                        <motion.button
+                                            whileHover={{
+                                                scale: 1.1,
+                                                transition: {duration: 0.3},
+                                            }}
+                                            whileTap={{scale: 0.9}}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 400,
+                                                damping: 10,
+                                            }}
+                                        >
+                                            Portfolio
+                                        </motion.button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

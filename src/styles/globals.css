@@ -22,11 +22,20 @@
     --card-rgb: 180, 185, 188;
     --card-border-rgb: 131, 134, 135;
 }
-
+@font-face {
+    font-family: 'EB Garamond', serif;
+    src: url('/fonts/EBGaramond-Regular.ttf') format('ttf'),
+        url('/fonts/EBGaramond-Bold.ttf') format('ttf'),
+        url('/fonts/EBGaramond-Medium.ttf') format('ttf');
+    /* Add other font formats if applicable */
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'EB Garamond', serif;
 }
 
 html,
