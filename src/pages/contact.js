@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from '../styles/Contact.module.scss';
 import Head from 'next/head';
 import Image from 'next/image';
+import {motion} from 'framer-motion';
 
 function Contact() {
     const router = useRouter();
@@ -73,7 +74,21 @@ function Contact() {
                                 />
                             </div>
                             <div>
-                                <button type='submit'>Submit</button>
+                                <motion.button
+                                    type='submit'
+                                    whileHover={{
+                                        scale: 1.1,
+                                        transition: {duration: 0.3},
+                                    }}
+                                    whileTap={{scale: 0.9}}
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 400,
+                                        damping: 10,
+                                    }}
+                                >
+                                    Submit
+                                </motion.button>
                             </div>
                         </div>
                     </form>
@@ -82,7 +97,6 @@ function Contact() {
                         this site.
                     </p>
                 </section>
-                <section className={styles.map}>{/* map */}</section>
             </div>
             <Footer />
         </div>
