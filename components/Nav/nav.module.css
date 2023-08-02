@@ -50,6 +50,6 @@
 .navIcons {
     display: none;
     @media (max-width: 768px) {
-        display: block;
+        display: block !important;
     }
 }
