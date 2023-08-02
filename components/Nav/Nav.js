@@ -9,7 +9,7 @@ import {motion, AnimatePresence} from 'framer-motion';
 import cls from 'classnames';
 
 function Nav() {
-    const [menu, setMenu] = useState(false);
+    const [menu, setMenu] = useState(true);
 
     const handleMenu = () => {
         setMenu(!menu);
@@ -20,8 +20,6 @@ function Nav() {
     const showMenu = () => {
         if (window.innerWidth > 768) {
             setMenu(true);
-        } else {
-            setMenu(false);
         }
     };
 
@@ -38,19 +36,20 @@ function Nav() {
             },
         },
     };
+    // Close the menu when the route changes
+    useEffect(() => {
+        if (window.innerWidth < 768) {
+            setMenu(false);
+        }
+    }, [router.pathname]);
 
     useEffect(() => {
-        setMenu(true);
+        showMenu();
         window.addEventListener('resize', showMenu);
         return () => {
             window.removeEventListener('resize', showMenu);
         };
-    }, []);
-
-    // Close the menu when the route changes
-    useEffect(() => {
-        setMenu(false);
-    }, [router.pathname]);
+    }, [menu]);
 
     return (
         <motion.div className={styles.navContainer}>
