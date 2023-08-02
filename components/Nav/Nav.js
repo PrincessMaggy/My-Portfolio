@@ -20,6 +20,8 @@ function Nav() {
     const showMenu = () => {
         if (window.innerWidth > 768) {
             setMenu(true);
+        } else {
+            setMenu(false);
         }
     };
 
@@ -49,7 +51,7 @@ function Nav() {
         return () => {
             window.removeEventListener('resize', showMenu);
         };
-    }, [menu]);
+    }, []);
 
     return (
         <motion.div className={styles.navContainer}>
