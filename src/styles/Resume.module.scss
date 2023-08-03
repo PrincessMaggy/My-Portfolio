@@ -18,6 +18,8 @@
     }
     h2 {
         letter-spacing: 0.3em;
+        font-weight: 500;
+
         @media (max-width: 768px) {
             letter-spacing: normal;
         }
@@ -38,19 +40,18 @@
             gap: 0.6em;
             flex-direction: column;
             margin-top: 2em;
+            li {
+                letter-spacing: 0.25em;
+            }
             p {
                 color: rgba(255, 214, 0, 0.4);
                 font-size: 0.8rem;
+                letter-spacing: 0.2em;
             }
         }
     }
 }
-.line {
-    background-color: rgba(255, 214, 0, 0.39);
-    height: 1px;
-    width: 14em;
-    // margin: 0 auto 0 auto;
-}
+
 .sect2 {
     display: flex;
     justify-content: center;
@@ -76,10 +77,12 @@
     }
     li {
         list-style: none;
+        letter-spacing: 0.3em;
     }
     p {
         color: rgba(255, 214, 0, 0.39);
         font-size: 0.8rem;
+        letter-spacing: 0.2em;
     }
 }
 .skill {
@@ -88,5 +91,8 @@
         display: flex;
         gap: 1em;
         margin: 1em 0 1em 0;
+        p {
+            letter-spacing: 0.2em;
+        }
     }
 }

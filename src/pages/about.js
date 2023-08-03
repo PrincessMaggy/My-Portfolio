@@ -56,7 +56,14 @@ function About() {
                         }}
                     >
                         <h1>ABOUT</h1>
-                        <div className={styles.line}></div>
+                        <div className={styles.line}>
+                            <Image
+                                src={`${basePath}/assets/line.svg`}
+                                width={200}
+                                height={20}
+                                alt='img'
+                            />
+                        </div>
                         <h5>Software Developer/Coach</h5>
                         <p>
                             Diligent software engineer with years practical

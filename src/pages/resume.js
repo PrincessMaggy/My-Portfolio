@@ -37,7 +37,14 @@ function Resume() {
                 >
                     <div className={styles.resumeLeft}>
                         <h2>CERTIFICATIONS</h2>
-                        <div className={styles.line}></div>
+                        <div>
+                            <Image
+                                src={`${basePath}/assets/line.svg`}
+                                width={290}
+                                height={20}
+                                alt='img'
+                            />
+                        </div>
                         <ul>
                             <li>NATIONAL YOUTH SERVICE CORP</li>
                             <p>--- NYSC NIGERIA ---</p>
@@ -72,7 +79,14 @@ function Resume() {
                 >
                     <div className={styles.exp}>
                         <h2>EXPERIENCES</h2>
-                        <div className={styles.line}></div>
+                        <div>
+                            <Image
+                                src={`${basePath}/assets/line.svg`}
+                                width={250}
+                                height={20}
+                                alt='img'
+                            />
+                        </div>
 
                         <div>
                             <div className={styles.experiences}>
@@ -115,7 +129,14 @@ function Resume() {
                     </div>
                     <div className={styles.skill}>
                         <h2>SKILL SET</h2>
-                        <div className={styles.line}></div>
+                        <div>
+                            <Image
+                                src={`${basePath}/assets/line.svg`}
+                                width={200}
+                                height={20}
+                                alt='img'
+                            />
+                        </div>
 
                         <div>
                             <div className={styles.skillset}>
