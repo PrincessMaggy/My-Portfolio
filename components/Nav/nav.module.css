@@ -7,6 +7,11 @@
     align-items: center;
     font-size: 0.8rem;
 }
+@media (max-width: 768px) {
+    .navContainer {
+        height: 10vh;
+    }
+}
 .navIcons {
     display: none;
 }
@@ -27,11 +32,12 @@
 @media (max-width: 768px) {
     .links {
         display: none;
+        margin-top: 2em;
         background-color: rgba(50, 53, 64, 0.5);
-        padding: 1em 0 2em 2em;
+        padding: 1em 0 3em 2em;
         flex-direction: column;
         position: absolute;
-        height: 30vh;
+        height: 32vh;
         justify-content: space-between;
         align-items: flex-start;
         top: 7%;
