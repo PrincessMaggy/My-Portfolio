@@ -33,7 +33,7 @@
     .links {
         display: none;
         margin-top: 2em;
-        background-color: rgba(50, 53, 64, 0.5);
+        background-color: rgba(50, 53, 64, 0.9);
         padding: 1em 0 3em 2em;
         flex-direction: column;
         position: absolute;
