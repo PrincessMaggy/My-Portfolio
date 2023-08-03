@@ -21,6 +21,7 @@
         p {
             font-size: 0.8rem;
             line-height: 1.3em;
+            letter-spacing: 0.12em;
         }
         @media (max-width: 768px) {
             height: fit-content;
@@ -29,6 +30,7 @@
         h3 {
             color: #ffd600;
             text-transform: uppercase;
+            letter-spacing: 0.1em;
         }
         div {
             display: flex;
