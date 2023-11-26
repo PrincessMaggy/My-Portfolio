@@ -84,10 +84,7 @@ function Services() {
                             communicates your ideas effectively. Whether user
                             manuals, API documentation, or technical guides, I
                             ensure that your audience can easily grasp the
-                            information they need. Let me, a skilled technical
-                            writer, help you deliver professional and
-                            user-friendly documentation for your products and
-                            services.
+                            information they need.
                         </p>
                     </motion.div>
 
@@ -111,17 +108,14 @@ function Services() {
                             <h3>Responsive Web Design</h3>
                         </div>
                         <p>
-                            In the current mobile-driven world, having a
-                            responsive website is essential to reach a wider
-                            audience. My responsive design service ensures that
-                            your website adapts seamlessly to different screen
-                            sizes, from desktops to smartphones and everything
-                            in between. With my expertise in modern web
-                            technologies, I create visually stunning and
+                            Having a responsive website is essential to reach a
+                            wider audience. My responsive design service ensures
+                            that your website adapts seamlessly to different
+                            screen sizes, from desktops to smartphones and
+                            everything in between. With my expertise in modern
+                            web technologies, I create visually stunning and
                             user-friendly websites that provide an optimal
-                            viewing experience on any device. Embrace the future
-                            of web design with my responsive solutions and stay
-                            ahead of the competition.
+                            viewing experience on any device.
                         </p>
                     </motion.div>
 
@@ -149,13 +143,9 @@ function Services() {
                             skills? My frontend coaching service offers
                             personalized, one-on-one guidance to help you become
                             a proficient web developer. Whether you are a
-                            beginner or an experienced coder seeking to expand
-                            your knowledge, I tailor my approach to your
-                            learning style and goals. From mastering HTML, CSS,
-                            and JavaScript to exploring advanced frontend
-                            frameworks, I provide the support and mentorship you
-                            need to excel in the dynamic world of frontend
-                            development.
+                            beginner or an experienced developer seeking to
+                            expand your knowledge, I tailor my approach to your
+                            learning style and goals.
                         </p>
                     </motion.div>
 
@@ -179,18 +169,13 @@ function Services() {
                             <h3>Software Development</h3>
                         </div>
                         <p>
-                            Transform your vision into reality with my top-notch
-                            software development service. As an experienced
-                            developer, I can build custom software solutions
-                            tailored to your unique needs and requirements. From
-                            web applications to mobile apps and enterprise
-                            software, I take pride in delivering high-quality,
-                            scalable, and reliable products. Collaborate with me
-                            through every step of the development process, from
-                            ideation and design to testing and deployment. Let
-                            me help you turn your ideas into cutting-edge
-                            software that drives innovation and enhances user
-                            experiences.
+                            As an experienced developer, I can build custom
+                            software solutions tailored to your unique needs and
+                            requirements. I take pride in delivering
+                            high-quality, scalable, and reliable products.
+                            Collaborate with me through every step of the
+                            development process, from ideation and design to
+                            testing and deployment.
                         </p>
                     </motion.div>
 
@@ -211,17 +196,16 @@ function Services() {
                                 height={40}
                                 alt='img'
                             />
-                            <h3>Programming Languages</h3>
+                            <h3>Talent Management</h3>
                         </div>
                         <p>
-                            Dive into the exciting world of programming
-                            languages with my comprehensive learning resources.
-                            My service covers a wide range of programming
-                            languages. I offer in-depth tutorials and hands-on
-                            projects to sharpen your coding skills. Unleash your
-                            creativity and problem-solving abilities as you
-                            embark on a journey of continuous learning with my
-                            programming languages service.
+                            As a talent manager, I create and manage the
+                            onboarding, training, and evaluation processes for
+                            new hires, instructors, and coaches. I also develop
+                            and implement strategies for talent acquisition and
+                            development, achieving high rates of job placement
+                            and internship opportunities for our students in my
+                            organisation.
                         </p>
                     </motion.div>
 
@@ -252,9 +236,6 @@ function Services() {
                             extensive coding. Whether you need a productivity
                             tool, a data entry solution, or a customer-facing
                             app, I can build it using the Power Apps platform.
-                            Enhance the efficiency and productivity of your
-                            organization with personalized applications that
-                            streamline processes and unlock new possibilities.
                         </p>
                     </motion.div>
                 </motion.main>

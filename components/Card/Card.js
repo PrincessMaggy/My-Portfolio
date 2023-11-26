@@ -209,7 +209,7 @@ function Card() {
             <motion.div className={styles.card} variants={item}>
                 <motion.div>
                     <Link
-                        href='https://princessmaggy.github.io/expense-tracker/'
+                        href='https://princessmaggy.github.io/Ruby-Fashion-Store/'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
@@ -225,7 +225,7 @@ function Card() {
                                 damping: 10,
                             }}
                         >
-                            Expense Tracker
+                            E-commerce site
                         </motion.button>
                     </Link>
                 </motion.div>
@@ -238,12 +238,12 @@ function Card() {
                     }}
                 >
                     <Link
-                        href='https://princessmaggy.github.io/expense-tracker/'
+                        href='https://princessmaggy.github.io/Ruby-Fashion-Store/'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
                         <Image
-                            src={`${basePath}/assets/projects (3).svg`}
+                            src={`${basePath}/assets/store.png`}
                             alt='project'
                             width={300}
                             height={200}
