@@ -119,14 +119,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="rightImg">
+              {/* <div className="rightImg">
                 <Image
-                  src={`${basePath}/assets/Logo.png`}
+                  src={`${basePath}/assets/bannerImg.png`}
                   alt="logo"
-                  width={50}
-                  height={50}
+                  width={450}
+                  height={600}
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.footer} key="footer">
               <motion.a
