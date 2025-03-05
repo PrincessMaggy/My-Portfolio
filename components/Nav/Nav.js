@@ -182,7 +182,7 @@ function Nav() {
               },
             }}
           >
-            <Link href="/contact">Contact</Link>
+            {/* <Link href="/contact">Contact</Link> */}
           </motion.div>
         </div>
 

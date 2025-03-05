@@ -16,7 +16,7 @@ function Footer() {
       <motion.div
         initial="initial"
         animate="animate"
-        style={{ display: "flex" }}
+        style={{ display: "flex", gap: "1em" }}
       >
         <motion.a
           href="https://github.com/PrincessMaggy"
