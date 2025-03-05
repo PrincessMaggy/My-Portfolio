@@ -1,5 +1,5 @@
 .resumeMain {
-    height: fit-content;
+    height: 80vh;
     display: flex;
     flex-direction: column;
 }
@@ -41,12 +41,12 @@
             flex-direction: column;
             margin-top: 2em;
             li {
-                letter-spacing: 0.25em;
+                // letter-spacing: 0.25em;
             }
             p {
                 color: rgba(255, 214, 0, 0.4);
-                font-size: 0.8rem;
-                letter-spacing: 0.2em;
+                font-size: 1.2rem;
+                // letter-spacing: 0.2em;
             }
         }
     }
@@ -77,12 +77,13 @@
     }
     li {
         list-style: none;
-        letter-spacing: 0.3em;
+        // letter-spacing: 0.3em;
     }
     p {
         color: rgba(255, 214, 0, 0.39);
-        font-size: 0.8rem;
-        letter-spacing: 0.2em;
+        font-size: 1.2rem;
+        // letter-spacing: 0.2em;
+        margin: 10px 0 10px 0;
     }
 }
 .skill {
