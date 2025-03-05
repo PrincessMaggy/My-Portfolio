@@ -57,65 +57,75 @@ export default function Home() {
             style={{ background: rootStyles }}
           >
             <div className={styles.banner} key="banner">
-              <h2 className={styles.firstname}>Edozie </h2>
-              <h2>Magdalene</h2>
-              <p>
-                {currentWord.split("").map((letter, index) => (
-                  <motion.span
-                    key={index}
-                    initial={{ y: 80, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.3 + index * 0.1 }}
-                    exit={{
-                      opacity: 0,
-                      y: 90,
-                      transition: {
-                        ease: "easeInOut",
-                        delay: 1,
-                      },
-                    }}
-                  >
-                    {letter}
-                  </motion.span>
-                ))}
-              </p>
-              <div className={styles.buttons}>
-                <div>
-                  <Link href="/resume">
-                    <motion.button
-                      whileHover={{
-                        scale: 1.1,
-                        transition: { duration: 0.3 },
-                      }}
-                      whileTap={{ scale: 0.9 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
+              <div className={styles.bannerFirst}>
+                <h2 className={styles.firstname}>Edozie </h2>
+                <h2>Magdalene</h2>
+                <p>
+                  {currentWord.split("").map((letter, index) => (
+                    <motion.span
+                      key={index}
+                      initial={{ y: 80, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.3 + index * 0.1 }}
+                      exit={{
+                        opacity: 0,
+                        y: 90,
+                        transition: {
+                          ease: "easeInOut",
+                          delay: 1,
+                        },
                       }}
                     >
-                      Resume
-                    </motion.button>
-                  </Link>
+                      {letter}
+                    </motion.span>
+                  ))}
+                </p>
+                <div className={styles.buttons}>
+                  <div>
+                    <Link href="/resume">
+                      <motion.button
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.3 },
+                        }}
+                        whileTap={{ scale: 0.9 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 10,
+                        }}
+                      >
+                        Resume
+                      </motion.button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="/portfolio">
+                      <motion.button
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.3 },
+                        }}
+                        whileTap={{ scale: 0.9 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 10,
+                        }}
+                      >
+                        Portfolio
+                      </motion.button>
+                    </Link>
+                  </div>
                 </div>
-                <div>
-                  <Link href="/portfolio">
-                    <motion.button
-                      whileHover={{
-                        scale: 1.1,
-                        transition: { duration: 0.3 },
-                      }}
-                      whileTap={{ scale: 0.9 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
-                    >
-                      Portfolio
-                    </motion.button>
-                  </Link>
-                </div>
+              </div>
+              <div className="rightImg">
+                <Image
+                  src={`${basePath}/assets/Logo.png`}
+                  alt="logo"
+                  width={50}
+                  height={50}
+                />
               </div>
             </div>
             <div className={styles.footer} key="footer">

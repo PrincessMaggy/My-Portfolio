@@ -13,13 +13,22 @@
         padding-left: 2em;
     }
 }
-
-.banner {
+.bannerFirst{
     display: flex;
     flex-direction: column;
-    height: 80%;
-    justify-content: center;
     gap: 1em;
+    height: 100%;
+    justify-content: center;
+}
+.banner {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    justify-content: space-between;
+    padding-right: 5em;
     @media (max-width: 768px) {
         gap: 1.5em;
     }
